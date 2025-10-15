@@ -1,3 +1,7 @@
+import pandas as pd
+import numpy as np
+import mlxtend as ml
+
 
 #used to create the item lists of k items
 def itemLists (items, k):
@@ -39,5 +43,5 @@ def assocRules(dataTable,support_Val, confidence_Val):
             supported = False
         current_set.union(kSets)
         k+=1
-        
+
 
