@@ -48,10 +48,10 @@ def assocRules(dataTable,support_Val, confidence_Val):
 
     for i in items:
         for cSet in current_set:
-            if item in cSet
+            if item in cSet:
                 rule_preview[item].append(cSet - {item})
 
-    rule_tracker = {s : 0 from s in itemLists(items,2)}
+    rule_tracker = {s : 0 for s in itemLists(items,2)}
 
     for {a,b} in rule_tracker.keys():
         for s in rule_preview[a]:
@@ -62,5 +62,6 @@ def assocRules(dataTable,support_Val, confidence_Val):
         confidence = count / len(rule_preview[a])
         if confidence >= confidence_Val:
             rules.append((a,b,confidence))
+    return rules
 
 
