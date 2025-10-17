@@ -40,12 +40,11 @@ SELECT * INTO CharliesCafe       FROM #Ordered WHERE rn BETWEEN 81  AND 120;
 SELECT * INTO Desayuno_de_David  FROM #Ordered WHERE rn BETWEEN 121 AND 160;
 SELECT * INTO EddiesEats         FROM #Ordered WHERE rn BETWEEN 161 AND 200;
 
--- Verify the splits
--- SELECT COUNT(*) AS Rows, 'AliceBakery'        AS TableName FROM AliceBakery
--- UNION ALL SELECT COUNT(*), 'BobsBreakfast'                    FROM BobsBreakfast
--- UNION ALL SELECT COUNT(*), 'CharliesCafe'                     FROM CharliesCafe
--- UNION ALL SELECT COUNT(*), 'Desayuno_de_David'                FROM Desayuno_de_David
--- UNION ALL SELECT COUNT(*), 'EddiesEats'                       FROM EddiesEats;
+--Verify the splits
+SELECT 'AliceBakery'AS TableName , COUNT(*) AS NumRows, COUNT(Distinct ItemsPurchased) AS Unique_Items FROM AliceBakery
+UNION ALL SELECT 'BobsBreakfast',COUNT(*) , COUNT(Distinct ItemsPurchased) FROM BobsBreakfast
+UNION ALL SELECT  'CharliesCafe',Count(*),COUNT(Distinct ItemsPurchased) AS Unique_Items FROM CharliesCafe
+UNION ALL SELECT  'Desayuno_de_David',COUNT(*) ,COUNT(Distinct ItemsPurchased) AS Unique_Items FROM Desayuno_de_David
+UNION ALL SELECT 'EddiesEats',COUNT(*),COUNT(Distinct ItemsPurchased) AS Unique_Items FROM EddiesEats;
 
 
-SELECT TransactionNo,ItemsPurchased FROM EddiesEats
