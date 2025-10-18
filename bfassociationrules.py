@@ -34,12 +34,12 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
 
     rule_tracker = {s : 0 for s in list(itertools.permutations(items,2))}
 
-    for [a,b] in rule_tracker.keys():
+    for (a,b) in rule_tracker.keys():
         for s in rule_preview[a]:
             if b in s:
                 rule_tracker[(a,b)] +=1
 
-    for (a,b), count in rule_tracker.items():
+    for ((a,b), count) in rule_tracker.items():
         confidence = count / len(rule_preview[a])
         if confidence >= confidence_Val:
             rules.append((a,b,confidence))
