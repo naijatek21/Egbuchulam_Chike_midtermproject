@@ -1,22 +1,7 @@
 import pandas as pd
 import numpy as np
 import mlxtend as ml
-
-
-#used to create the item lists of k items
-def createKItemsets (items, k):
-    itemSets = []
-    def backtrack(start, current):
-        if len(current) == k:
-            itemSets.append(current[:])
-            return
-        for i in range(start, len(items)):
-            current.append(items[i])
-            backtrack(i + 1, current)
-            current.pop()
-
-    backtrack(0, [])
-    return itemSets
+import itertools
 
 
 
@@ -27,7 +12,7 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
     current_set = {}
     while supported:
         kSets = {}
-        itemSets = createKItemsets(items,k)
+        itemSets = set(itertools.combinations(items,k))
         for s in itemSets:
                 count =0
                 for row in dataTable:
@@ -47,9 +32,9 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
             if i in cSet:
                 rule_preview[i].append(cSet - {i})
 
-    rule_tracker = {s : 0 for s in createKItemsets(items,2)}
+    rule_tracker = {s : 0 for s in list(itertools.permutations(items,2))}
 
-    for {a,b} in rule_tracker.keys():
+    for [a,b] in rule_tracker.keys():
         for s in rule_preview[a]:
             if b in s:
                 rule_tracker[(a,b)] +=1

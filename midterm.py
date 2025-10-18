@@ -70,7 +70,7 @@ def main_menu():
     unique_items = set().union(*transactions_set)
 
 
-    bfrules=assocRules(list(unique_items),transactions_set,supportValue,confidenceValue)
+    bfrules=assocRules(unique_items,transactions_set,supportValue,confidenceValue)
     
 '''
  te = TransactionEncoder()
