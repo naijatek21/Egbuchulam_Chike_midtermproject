@@ -4,14 +4,11 @@ import mlxtend as ml
 
 
 #used to create the item lists of k items
-def itemLists (items, k):
-
-    ilists = []
-
-
+def createKItemsets (items, k):
+    itemSets = []
     def backtrack(start, current):
         if len(current) == k:
-            ilists.append(current[:])
+            itemSets.append(current[:])
             return
         for i in range(start, len(items)):
             current.append(items[i])
@@ -19,19 +16,18 @@ def itemLists (items, k):
             current.pop()
 
     backtrack(0, [])
-    return ilists
+    return itemSets
 
 
 
-def assocRules(dataTable,support_Val, confidence_Val):
+def assocRules(items,dataTable,support_Val, confidence_Val):
     rules = []
     supported = True
     k=1
-    items =[]   #fill 
     current_set = {}
     while supported:
         kSets = {}
-        itemSets = itemLists(items,k)
+        itemSets = createKItemsets(items,k)
         for s in itemSets:
                 count =0
                 for row in dataTable:
@@ -51,7 +47,7 @@ def assocRules(dataTable,support_Val, confidence_Val):
             if i in cSet:
                 rule_preview[i].append(cSet - {i})
 
-    rule_tracker = {s : 0 for s in itemLists(items,2)}
+    rule_tracker = {s : 0 for s in createKItemsets(items,2)}
 
     for {a,b} in rule_tracker.keys():
         for s in rule_preview[a]:

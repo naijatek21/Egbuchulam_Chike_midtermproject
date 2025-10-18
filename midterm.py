@@ -65,7 +65,12 @@ def main_menu():
 
     transactions= pd.read_csv(dbfile,usecols=["ItemsPurchased"])
 
-    bfrules=assocRules(dbfile,supportValue,confidenceValue)
+    transactions_set = transactions['ItemsPurchased'].apply(lambda x: set(item.strip() for item in x.split(','))).tolist()
+
+    unique_items = set().union(*transactions_set)
+
+
+    bfrules=assocRules(list(unique_items),transactions_set,supportValue,confidenceValue)
     
 '''
  te = TransactionEncoder()
