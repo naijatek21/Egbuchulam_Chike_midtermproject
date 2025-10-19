@@ -41,7 +41,7 @@ def main_menu():
 
         # input validation
         while True:
-            sV=("Please enter the minimum support %% you want (0-100): ")
+            sV=input("Please enter the minimum support %% you want (0-100): ")
             try:
                 supportValue = (int(sV))/100
             except ValueError:
