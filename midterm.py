@@ -84,7 +84,7 @@ def main_menu():
         print("Confidence {} %".format(confidenceValue * 100))
 
         if supportValue != 0:
-            bfrules = assocRules(unique_items, transactions_set, supportValue, confidenceValue)
+            [bfsets,bfrules] = assocRules(unique_items, transactions_set, supportValue, confidenceValue)
             print("==================================Rules==============================")
             i = 1
             for (a, b, c) in bfrules:

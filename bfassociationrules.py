@@ -1,10 +1,5 @@
-import pandas as pd
-import numpy as np
-import mlxtend as ml
+
 import itertools
-
-
-
 def assocRules(items,dataTable,support_Val, confidence_Val):
     rules = []
     supported = True
@@ -28,10 +23,10 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
         current_set+=kSets
         k+=1
 
-    print("Frequent Itemsets:")
+    # print("Frequent Itemsets:")
     rule_preview= {i:[] for i in items}
     frequent_itemsets = [s for s in current_set if len(s)>=2]
-    print(frequent_itemsets)
+    # print(frequent_itemsets)
     for i in items:
         for s in frequent_itemsets:
             if i in s:
@@ -50,6 +45,6 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
             if confidence >= confidence_Val:
                 rules.append((a,b,confidence))
     # print(rules)
-    return rules
+    return [frequent_itemsets,rules]
 
 
