@@ -6,11 +6,11 @@ from bfassociationrules import assocRules
 
 def main_menu():
     keepgoing = "y"
-    storeChoice = ""
     dbfile = ""
     stores = ["Alice's Bakery", "Bob's Breakfast", "Charlie's Cafe", "Desayuno de David","Eddie's Eatery"]
     supportValue,confidenceValue=0,0
-    while keepgoing =="y":
+    while keepgoing =="y": 
+        storeChoice=""
         print("\n==================Welcome to the Midterm Baking District==============")
         print("Please Select a Store")
         for i, store in enumerate(stores, 1):
@@ -41,9 +41,9 @@ def main_menu():
 
         # input validation
         while True:
-            sV=input("Please enter the minimum support %% you want (0-100): ")
+            sV=input("Please enter the minimum support % you want (0-100): ")
             try:
-                supportValue = (int(sV))/100
+                supportValue = (float(sV))/100
             except ValueError:
                 print("Please input a numeric value")
                 continue
@@ -54,9 +54,9 @@ def main_menu():
 
 
         while True:
-            cV=input("Please enter the minimum support %% you want (0-100): ")
+            cV=input("Please enter the minimum confidence % you want (0-100): ")
             try:
-                confidenceValue = (int(cV))/100
+                confidenceValue = (float(cV))/100
             except ValueError:
                 print("Please input a numeric value")
                 continue
