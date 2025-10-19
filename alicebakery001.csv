@@ -3,35 +3,35 @@ TransactionNo,ItemsPurchased
 2,"Scandinavian, Scandinavian"
 3,"Cookies, Jam, Hot chocolate"
 4,Muffin
-5,"Pastry, Bread, Coffee"
-6,"Medialuna, Muffin, Pastry"
-7,"Pastry, Medialuna, Coffee, Tea"
-8,"Pastry, Bread"
-9,"Bread, Muffin"
+5,"Bread, Pastry, Coffee"
+6,"Medialuna, Pastry, Muffin"
+7,"Medialuna, Tea, Coffee, Pastry"
+8,"Bread, Pastry"
+9,"Muffin, Bread"
 10,"Scandinavian, Medialuna"
 11,"Bread, Bread, Medialuna"
-12,"Jam, Pastry, Coffee, Tea"
-13,"Bread, Coffee"
-14,"Medialuna, Pastry, Bread"
-15,"Mineral water, Scandinavian"
+12,"Jam, Tea, Coffee, Pastry"
+13,"Coffee, Bread"
+14,"Pastry, Medialuna, Bread"
+15,"Scandinavian, Mineral water"
 16,"Medialuna, Coffee, Bread"
 17,Hot chocolate
 18,Farm House
 19,"Farm House, Bread"
 20,"Bread, Medialuna"
-21,"Coffee, Coffee, Medialuna, Bread"
+21,"Bread, Medialuna, Coffee, Coffee"
 22,Jam
 23,"Muffin, Scandinavian"
 24,Bread
 25,Scandinavian
 26,Fudge
 27,Scandinavian
-28,"Bread, Coffee"
+28,"Coffee, Bread"
 29,"Bread, Jam"
 30,Bread
-32,"Muffin, Scandinavian"
+32,"Scandinavian, Muffin"
 33,Coffee
-34,"Coffee, Muffin"
+34,"Muffin, Coffee"
 35,"Muffin, Scandinavian"
 36,"Bread, Tea"
 37,"Bread, Coffee"
@@ -39,23 +39,3 @@ TransactionNo,ItemsPurchased
 39,Scandinavian
 40,"Muffin, Juice, Coffee"
 41,Scandinavian
-42,"Bread, Tea"
-43,"Fudge, Scandinavian"
-44,"Medialuna, Coffee"
-45,"Coffee, Medialuna, Hot chocolate"
-46,Coffee
-47,"Muffin, Jam, Juice, Bread"
-48,Coffee
-49,"Medialuna, Coffee, Coffee"
-50,Bread
-51,Bread
-52,Scandinavian
-54,Bread
-55,"Coffee, Tea, Hearty & Seasonal"
-56,Coffee
-57,Scandinavian
-58,"Hot chocolate, Soup, Tea"
-59,Tea
-60,"Juice, Cookies, Coffee, Coffee"
-61,Coffee
-62,"Coffee, Coffee, Hearty & Seasonal, Hearty & Seasonal"

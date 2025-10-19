@@ -55,11 +55,11 @@ GO
    ================================================ */
 DROP TABLE IF EXISTS AliceBakery, BobsBreakfast, CharliesCafe, Desayuno_de_David, EddiesEats;
 
-SELECT * INTO AliceBakery        FROM #Numbered WHERE rn BETWEEN 1   AND 60;
-SELECT * INTO BobsBreakfast      FROM #Numbered WHERE rn BETWEEN 61  AND 120;
-SELECT * INTO CharliesCafe       FROM #Numbered WHERE rn BETWEEN 121 AND 180;
-SELECT * INTO Desayuno_de_David  FROM #Numbered WHERE rn BETWEEN 181 AND 240;
-SELECT * INTO EddiesEats         FROM #Numbered WHERE rn BETWEEN 241 AND 300;
+SELECT * INTO AliceBakery        FROM #Numbered WHERE rn BETWEEN 1   AND 40;
+SELECT * INTO BobsBreakfast      FROM #Numbered WHERE rn BETWEEN 41  AND 80;
+SELECT * INTO CharliesCafe       FROM #Numbered WHERE rn BETWEEN 81 AND 120;
+SELECT * INTO Desayuno_de_David  FROM #Numbered WHERE rn BETWEEN 121 AND 160;
+SELECT * INTO EddiesEats         FROM #Numbered WHERE rn BETWEEN 161 AND 200;
 GO
 
 /* ================================================
@@ -72,4 +72,4 @@ GO
 -- UNION ALL SELECT COUNT(*), 'EddiesEats'         FROM EddiesEats;
 -- GO
 
-SELECT TransactionNo,ItemsPurchased FROM Desayuno_de_David ORDER BY TransactionNo
+SELECT TransactionNo,ItemsPurchased FROM EddiesEats ORDER BY TransactionNo

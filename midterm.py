@@ -15,9 +15,9 @@ def main_menu():
         print("Please Select a Store")
         for i, store in enumerate(stores, 1):
                 print(f"{i}. {store}")
-        choice = input("Enter your choice (1-5): ")
         
         while storeChoice=="":
+            choice = input("Enter your choice (1-5): ")
             if choice == "1":
                 storeChoice="Alice's Bakery"
                 dbfile='alicebakery001.csv'

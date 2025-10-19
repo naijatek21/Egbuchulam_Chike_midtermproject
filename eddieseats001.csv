@@ -1,61 +1,41 @@
 TransactionNo,ItemsPurchased
-245,"Cake, Cookies"
-246,"Tea, Bread"
-247,"Juice, Coffee, Coffee, Coffee, Alfajores"
-248,"Soup, Tea, Coffee"
-249,Hot chocolate
-250,Cookies
-251,"Medialuna, Coffee"
-252,Bread
-253,Scandinavian
-254,Medialuna
-255,"Coffee, Coffee, Pastry"
-256,"Bread, Coffee"
-257,"Bread, Pastry, Coffee"
-258,"Coffee, Pastry"
-259,Pastry
-260,Coffee
-261,Coffee
-262,"Coffee, Pastry, Hot chocolate"
-263,Coke
-264,"Coffee, Jam"
-265,Tea
-266,"Pastry, Bread"
-267,"Alfajores, Coffee, Farm House"
-268,"Tea, Pastry"
-269,Bread
-270,"Jam, Coffee"
-271,"Tea, Coffee, Coffee, Pastry"
-272,Farm House
-274,"Coffee, Pastry, Bread"
-275,Farm House
-276,"Coffee, Coffee, Pastry"
-277,Farm House
-278,"Pastry, Coffee"
-279,Coffee
-280,"Coffee, Pastry"
-281,"Bread, Bread"
-282,"Pastry, Bread, Coffee"
-283,"Coffee, Pastry"
-284,"Farm House, Coffee"
-285,"Pastry, Farm House, Farm House"
-286,"Alfajores, Bread, Juice"
-287,"Coffee, Pastry"
-288,"Bread, Alfajores"
-289,Bread
-290,"Cookies, Coffee"
-291,Coffee
-292,Cookies
-293,Hearty & Seasonal
-294,Coffee
-295,"Jam, Bread"
-296,"Farm House, Scandinavian"
-297,"Coffee, Hearty & Seasonal, Scandinavian, Muffin"
-298,"Coffee, Coke"
-299,Bread
-300,"Farm House, Scandinavian, Alfajores, Coffee, Coffee"
-301,"Soup, Mineral water, Juice"
-302,"Tea, Soup"
-303,"Cookies, Juice, Soup, Tea"
-304,"Hearty & Seasonal, Tea"
-305,Fudge
+163,"Juice, Coffee"
+164,"Coffee, Muffin"
+165,Tea
+166,"Coffee, Muffin"
+167,"Mineral water, Bread, Sandwich, Hearty & Seasonal"
+168,"Tea, Coffee"
+169,Mineral water
+170,Coffee
+171,"Tea, Soup"
+172,"Bread, Coffee"
+173,"Muffin, Bread"
+174,Coffee
+175,Bread
+176,"Coffee, Cookies"
+178,"Pastry, Coffee"
+179,"Pastry, Coffee"
+180,"Jam, Tea"
+181,"Tea, Tea"
+182,"Pastry, Pastry"
+183,Pastry
+184,"Farm House, Tea"
+185,Tea
+186,"Tea, Pastry"
+187,Bread
+188,Coffee
+189,"Bread, Coffee"
+190,"Pastry, Pastry, Coffee"
+191,"Soup, Tea"
+192,Bread
+193,Coffee
+194,"Bread, Bread"
+195,"Bread, Scandinavian"
+196,"Cookies, Cake, Bread"
+197,"Tea, Coffee, Coffee"
+198,"Coffee, Cookies"
+199,Coffee
+200,Bread
+201,"Coffee, Pastry"
+202,"Coffee, Coffee"
+203,Coffee

@@ -9,7 +9,7 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
     rules = []
     supported = True
     k=1
-    # print(type(dataTable[1]))
+    # print(dataTable)
     current_set = []
     while supported:
         kSets = []
@@ -28,12 +28,14 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
         current_set+=kSets
         k+=1
 
+    print("Frequent Itemsets:")
     rule_preview= {i:[] for i in items}
-
+    frequent_itemsets = [s for s in current_set if len(s)>=2]
+    print(frequent_itemsets)
     for i in items:
-        for cSet in current_set:
-            if i in cSet:
-                rule_preview[i].append(cSet - {i})
+        for s in frequent_itemsets:
+            if i in s:
+                rule_preview[i].append(s - {i})
 
     rule_tracker = {s : 0 for s in list(itertools.permutations(items,2))}
 

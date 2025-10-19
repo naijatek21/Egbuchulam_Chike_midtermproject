@@ -1,61 +1,41 @@
 TransactionNo,ItemsPurchased
-184,"Farm House, Tea"
-185,Tea
-186,"Tea, Pastry"
-187,Bread
-188,Coffee
-189,"Bread, Coffee"
-190,"Pastry, Pastry, Coffee"
-191,"Soup, Tea"
-192,Bread
-193,Coffee
-194,"Bread, Bread"
-195,"Bread, Scandinavian"
-196,"Cookies, Bread, Cake"
-197,"Tea, Coffee, Coffee"
-198,"Coffee, Cookies"
-199,Coffee
-200,Bread
-201,"Coffee, Pastry"
-202,"Coffee, Coffee"
-203,Coffee
-204,"Bread, Scandinavian"
-205,"Pastry, Coffee, Coffee"
-206,"Coffee, Pastry, Scandinavian"
-207,"Muffin, Coffee, Hearty & Seasonal"
-208,Bread
-209,Coffee
-210,Scandinavian
-211,"Coffee, Soup"
-212,"Coffee, Cookies"
-213,Bread
-214,"Tea, Tea, Bread"
-215,"Pastry, Coffee"
-216,Coffee
-217,"Cookies, Bread"
-218,Sandwich
-220,"Bread, Pastry"
-221,"Bread, Scandinavian"
-222,Scandinavian
-223,"Alfajores, Coffee"
-224,Coffee
-225,"Coffee, Coke, Soup"
-226,Cake
-227,"Tea, Soup, Sandwich"
-228,Coffee
-229,"Bread, Hearty & Seasonal"
-230,Alfajores
-231,Cake
-232,"Tea, Tea, Bread"
-233,"Bread, Soup, Coffee, Tea"
-234,"Coffee, Coffee"
-235,Scandinavian
-236,Fudge
-237,"Sandwich, Coffee"
-238,"Bread, Cookies, Tea, Pastry"
-239,Muffin
-240,Scandinavian
-241,"Tea, Jam"
-242,"Juice, Alfajores, Tea"
-243,"Coffee, Cake, Soup, Muffin"
-244,"Hot chocolate, Cake, Coffee"
+123,"Coffee, Coffee, Jam, Juice"
+124,"Coffee, Soup"
+125,Tea
+126,"Coffee, Jam"
+127,Farm House
+128,"Coffee, Tea"
+129,"Coffee, Coffee, Cake"
+130,"Coffee, Coffee, Muffin"
+131,"Bread, Coffee"
+132,"Cookies, Juice, Tea"
+133,"Soup, Hearty & Seasonal"
+134,"Farm House, Tea, Hearty & Seasonal"
+135,Bread
+136,"Tea, Soup"
+137,Farm House
+138,"Hearty & Seasonal, Coffee, Soup"
+139,"Hearty & Seasonal, Muffin, Bread"
+140,"Cookies, Coffee, Coffee"
+141,Bread
+142,"Muffin, Tea"
+143,Tea
+144,"Soup, Hearty & Seasonal"
+145,"Coffee, Tea"
+146,Sandwich
+147,Coffee
+148,"Fudge, Coffee, Coffee"
+149,Coffee
+150,Bread
+151,"Coke, Soup"
+152,Muffin
+153,"Muffin, Cookies, Tea, Coffee"
+154,"Hearty & Seasonal, Coke, Coffee"
+155,"Tea, Muffin, Sandwich"
+156,"Muffin, Coffee"
+157,"Bread, Coffee"
+158,"Muffin, Coffee"
+159,"Hot chocolate, Cookies, Bread"
+160,"Mineral water, Muffin"
+161,Tea
+162,Muffin

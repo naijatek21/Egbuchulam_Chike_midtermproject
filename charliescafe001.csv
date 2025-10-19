@@ -1,61 +1,41 @@
 TransactionNo,ItemsPurchased
-123,"Juice, Jam, Coffee, Coffee"
-124,"Soup, Coffee"
-125,Tea
-126,"Coffee, Jam"
-127,Farm House
-128,"Coffee, Tea"
-129,"Coffee, Coffee, Cake"
-130,"Muffin, Coffee, Coffee"
-131,"Coffee, Bread"
-132,"Juice, Cookies, Tea"
-133,"Soup, Hearty & Seasonal"
-134,"Tea, Farm House, Hearty & Seasonal"
-135,Bread
-136,"Tea, Soup"
-137,Farm House
-138,"Hearty & Seasonal, Soup, Coffee"
-139,"Hearty & Seasonal, Muffin, Bread"
-140,"Coffee, Coffee, Cookies"
-141,Bread
-142,"Tea, Muffin"
-143,Tea
-144,"Soup, Hearty & Seasonal"
-145,"Tea, Coffee"
-146,Sandwich
-147,Coffee
-148,"Fudge, Coffee, Coffee"
-149,Coffee
-150,Bread
-151,"Coke, Soup"
-152,Muffin
-153,"Muffin, Cookies, Tea, Coffee"
-154,"Hearty & Seasonal, Coke, Coffee"
-155,"Tea, Muffin, Sandwich"
-156,"Muffin, Coffee"
-157,"Bread, Coffee"
-158,"Muffin, Coffee"
-159,"Hot chocolate, Cookies, Bread"
-160,"Muffin, Mineral water"
-161,Tea
-162,Muffin
-163,"Coffee, Juice"
-164,"Muffin, Coffee"
-165,Tea
-166,"Coffee, Muffin"
-167,"Mineral water, Sandwich, Bread, Hearty & Seasonal"
-168,"Tea, Coffee"
-169,Mineral water
-170,Coffee
-171,"Tea, Soup"
-172,"Bread, Coffee"
-173,"Muffin, Bread"
-174,Coffee
-175,Bread
-176,"Coffee, Cookies"
-178,"Pastry, Coffee"
-179,"Pastry, Coffee"
-180,"Jam, Tea"
-181,"Tea, Tea"
-182,"Pastry, Pastry"
-183,Pastry
+83,"Coffee, Bread"
+84,Bread
+85,"Pastry, Coffee, Coffee, Medialuna"
+86,Juice
+87,Bread
+88,"Jam, Coffee, Coffee"
+89,Bread
+90,"Bread, Coffee"
+91,Tea
+92,Coffee
+93,"Bread, Coke"
+94,"Coffee, Coffee"
+95,"Tea, Pastry, Farm House"
+96,"Pastry, Pastry, Juice, Coffee"
+97,"Coffee, Juice, Pastry"
+98,Farm House
+99,"Bread, Pastry, Pastry, Coffee"
+100,Bread
+101,"Pastry, Coffee"
+102,Farm House
+103,Bread
+104,"Muffin, Coffee, Coffee, Coffee, Medialuna"
+105,"Coffee, Tea, Cake"
+106,"Coffee, Coffee, Pastry, Pastry"
+107,"Tea, Coffee"
+108,"Muffin, Farm House"
+109,"Bread, Pastry, Muffin"
+110,Pastry
+111,Coffee
+112,Coffee
+113,"Coffee, Cake"
+114,Farm House
+115,Bread
+116,Coffee
+117,"Cookies, Coffee, Cake"
+118,"Pastry, Cookies, Cookies, Tea"
+119,"Muffin, Coffee, Coffee"
+120,Farm House
+121,"Coffee, Bread"
+122,Cookies
