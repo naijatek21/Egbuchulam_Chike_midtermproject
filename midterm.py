@@ -69,8 +69,8 @@ def main_menu():
                 break
             else:
                 print("Invalid selection")
-
-        # ✅ reads CSVs from the tables folder
+        print("Support {} %".format(supportValue * 100))
+        print("Confidence {} %".format(confidenceValue * 100))
         transactions = pd.read_csv(dbfile, usecols=["ItemsPurchased"])
 
         transactions_set = transactions["ItemsPurchased"].apply(
@@ -79,12 +79,11 @@ def main_menu():
 
         unique_items = set().union(*transactions_set)
 
-        print("=================================Results=============================")
-        print("Support {} %".format(supportValue * 100))
-        print("Confidence {} %".format(confidenceValue * 100))
 
         if supportValue != 0:
             [bfsets,bfrules] = assocRules(unique_items, transactions_set, supportValue, confidenceValue)
+            print("=================================Results=============================")
+            print(f"Frequent Itemsets:\n {bfsets}")
             print("==================================Rules==============================")
             i = 1
             for (a, b, c) in bfrules:
