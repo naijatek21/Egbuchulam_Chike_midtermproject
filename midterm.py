@@ -9,7 +9,7 @@ def main_menu():
     storeChoice = ""
     dbfile = ""
     stores = ["Alice's Bakery", "Bob's Breakfast", "Charlie's Cafe", "Desayuno de David","Eddie's Eatery"]
-    supportValue,confidenceValue=0
+    supportValue,confidenceValue=0,0
     while keepgoing =="y":
         print("\n==================Welcome to the Midterm Baking District==============")
         print("Please Select a Store")
@@ -72,8 +72,8 @@ def main_menu():
         unique_items = set().union(*transactions_set)
 
         print("=================================Results=============================")
-        print("Support {} %%".format(supportValue*100))
-        print("Confidence {} %%".format(confidenceValue*100))
+        print("Support {} %".format(supportValue*100))
+        print("Confidence {} %".format(confidenceValue*100))
 
         if supportValue!=0:
             bfrules=assocRules(unique_items,transactions_set,supportValue,confidenceValue)
@@ -84,7 +84,7 @@ def main_menu():
                 print('\n')
                 i+=1
         else:
-            print("At 0%% support I have to look at possible menu pairing as a rule even if it happens only once. So in other words you're trying to waste my time so here is the whole ist of transactions.")
+            print("At 0%/ support I have to look at possible menu pairing as a rule even if it happens only once. So in other words you're trying to waste my time so here is the whole ist of transactions.")
             print(transactions)
 
         if len(bfrules)==0:
@@ -94,8 +94,8 @@ def main_menu():
         choice =""
         choice = input("Do you want to try another store or settings? (y/n)")
         choice=choice.lower()
-        while choice != "y" or choice!="n" :
-            choice = input("Please enter y or n")
+        while choice != "y" and choice!="n" :
+            choice = input("Please enter y or n:\n")
             choice=choice.lower()
         keepgoing=choice
     print("Thank You!")

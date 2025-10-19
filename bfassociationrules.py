@@ -9,20 +9,23 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
     rules = []
     supported = True
     k=1
-    current_set = {}
+    # print(type(dataTable[1]))
+    current_set = []
     while supported:
-        kSets = {}
-        itemSets = set(itertools.combinations(items,k))
+        kSets = []
+        itemSets = itertools.combinations(items,k)
+        itemSets = list(map(set, itemSets))
+        # print(itemSets)
         for s in itemSets:
                 count =0
                 for row in dataTable:
                     if s.issubset(row):
                         count+=1
                 if count/len(dataTable) >= support_Val:
-                    kSets.add(s)
+                    kSets.append(s)
         if len(kSets) == 0:
             supported = False
-        current_set.union(kSets)
+        current_set+=kSets
         k+=1
 
     rule_preview= {i:[] for i in items}
@@ -40,9 +43,11 @@ def assocRules(items,dataTable,support_Val, confidence_Val):
                 rule_tracker[(a,b)] +=1
 
     for ((a,b), count) in rule_tracker.items():
-        confidence = count / len(rule_preview[a])
-        if confidence >= confidence_Val:
-            rules.append((a,b,confidence))
+        if rule_preview[a]!=[]:
+            confidence = count / len(rule_preview[a])
+            if confidence >= confidence_Val:
+                rules.append((a,b,confidence))
+    # print(rules)
     return rules
 
 
