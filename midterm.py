@@ -96,7 +96,7 @@ def main_menu():
                 "At 0% support I have to look at possible menu pairing as a rule even if it happens only once. "
                 "So in other words, you're trying to waste my time so here is the whole list of transactions."
             )
-            print(transactions)
+            # print(transactions)
 
         if supportValue != 0 and len(bfrules) == 0:
             print("There are no rules that satisfy these minimum values")
