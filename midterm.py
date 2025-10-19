@@ -83,7 +83,7 @@ def main_menu():
                 print(f"Rule {i}: {a} ===> {b} \t Confidence :{c}")
                 print('\n')
                 i+=1
-        else:
+        if supportValue==0:
             print("At 0%/ support I have to look at possible menu pairing as a rule even if it happens only once. So in other words you're trying to waste my time so here is the whole ist of transactions.")
             print(transactions)
 
